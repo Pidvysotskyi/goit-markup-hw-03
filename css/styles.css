@@ -137,7 +137,9 @@ a {
 .hiden-title {
   display: none;
 }
-
+.principle-card {
+  width: 270px;
+}
 .principle-title {
   font-weight: 700;
   line-height: 1.14;
@@ -237,6 +239,7 @@ footer {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  padding: 6px 22px;
 }
 .filter:hover,
 .filter:focus,
@@ -250,11 +253,15 @@ footer {
 /* Project list */
 
 .project-item {
-  border: 1px solid var(--primary-border-color);
-  box-sizing: border-box;
+  width: 370px;
 }
 .project-link {
   text-decoration: none;
+}
+.project-description {
+  border-left: 1px solid var(--primary-border-color);
+  border-right: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 .project-name {
   font-weight: 700;
