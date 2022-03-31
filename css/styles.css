@@ -16,12 +16,44 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+p {
+  margin-top: 0;
+}
+a {
+  display: inline-block;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 5px solid red;
+  margin: 0 auto;
+}
+.section {
+  outline: 2px dotted green;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .unformated-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 /* Header */
 /* Navigation panel */
 .top-line {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .nav {
 }
@@ -70,18 +102,17 @@ body {
 /* Hero section */
 .hero {
   background: var(--secondary-bg-color);
+  padding: 200px 0px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--third-text-color);
+  margin-bottom: 30px;
 }
 .hero-button {
   font-weight: 700;
@@ -94,10 +125,17 @@ body {
   color: var(--third-text-color);
   background-color: var(--active-text-color);
   cursor: pointer;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: transparent;
+  border-radius: 4px;
 }
 /* Section "The main principles" */
+.peculiarities {
+  padding-top: 94px;
+}
 .hiden-title {
-  visibility: hidden;
+  display: none;
 }
 
 .principle-title {
@@ -105,9 +143,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 .principle-description {
   line-height: 1.71;
+  margin-bottom: 0;
 }
 /* Section "What we are doing */
 .section-heading {
@@ -116,6 +156,7 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 50px;
 }
 /* Section "Our team */
 .team {
@@ -123,8 +164,11 @@ body {
 }
 .team-member {
   background-color: var(--primary-bg-color);
+  width: 270px;
+  padding-bottom: 30px;
 }
 .team-member .photo {
+  margin-bottom: 30px;
 }
 .team-member .name {
   font-weight: 500;
@@ -132,6 +176,7 @@ body {
   line-height: 1.2;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 .team-member .position {
   font-family: "Roboto";
@@ -142,6 +187,17 @@ body {
 /* Footer */
 footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.nav-logo-bottom {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 .second-white-part {
   color: var(--third-text-color);
@@ -155,8 +211,16 @@ footer {
   text-decoration: none;
   color: var(--trasparent-text-color);
 }
+.bottom-contact:hover,
+.bottom-contact:focus {
+  color: var(--active-text-color);
+}
+.bottom-mail {
+  margin-bottom: 9px;
+}
 .address {
   color: var(--third-text-color);
+  margin-bottom: 9px;
 }
 
 /* Portfolio page */
