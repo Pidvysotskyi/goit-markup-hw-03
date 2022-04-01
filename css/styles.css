@@ -8,6 +8,7 @@
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
   --primary-border-color: #eeeeee;
+  --secondary-border-color: #ececec;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -35,12 +36,15 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 5px solid red;
   margin: 0 auto;
 }
+.flex-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .section {
-  outline: 2px dotted green;
-
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -54,8 +58,12 @@ a {
 .top-line {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--secondary-border-color);
 }
 .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .nav-logo {
   color: var(--secondary-text-color);
@@ -64,6 +72,11 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-right: 93px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
 }
 .first-logo-part {
   color: var(--active-text-color);
@@ -78,6 +91,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
+  margin-right: 50px;
 }
 .nav-item:hover,
 .nav-item:focus,
@@ -86,6 +100,9 @@ a {
 }
 /* Contacts */
 .contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .contact {
   text-decoration: none;
@@ -93,6 +110,7 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: 50px;
 }
 .contact:hover,
 .contact:focus {
@@ -185,6 +203,7 @@ a {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 0;
 }
 /* Footer */
 footer {
@@ -228,7 +247,12 @@ footer {
 /* Portfolio page */
 
 /* Filter buttons */
-
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .filter {
   cursor: pointer;
   color: var(--secondary-text-color);
@@ -241,6 +265,7 @@ footer {
   text-align: center;
   padding: 6px 22px;
   margin-bottom: 50px;
+  margin-right: 8px;
 }
 .filter:hover,
 .filter:focus,
@@ -252,10 +277,17 @@ footer {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Project list */
-
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .project-item {
   width: 370px;
   margin-bottom: 30px;
+}
+.project-item.last-item {
+  margin-bottom: 0;
 }
 .project-link {
   text-decoration: none;
