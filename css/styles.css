@@ -240,6 +240,7 @@ footer {
   line-height: 1.63;
   text-align: center;
   padding: 6px 22px;
+  margin-bottom: 50px;
 }
 .filter:hover,
 .filter:focus,
@@ -254,6 +255,7 @@ footer {
 
 .project-item {
   width: 370px;
+  margin-bottom: 30px;
 }
 .project-link {
   text-decoration: none;
@@ -262,6 +264,7 @@ footer {
   border-left: 1px solid var(--primary-border-color);
   border-right: 1px solid var(--primary-border-color);
   border-bottom: 1px solid var(--primary-border-color);
+  padding: 20px 24px;
 }
 .project-name {
   font-weight: 700;
@@ -269,9 +272,11 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 .project-type {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+  margin-bottom: 0;
 }
