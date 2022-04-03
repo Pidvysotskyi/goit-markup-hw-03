@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web studio page</title>
-    <link rel="stylesheet" href="hhttps://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -24,14 +24,14 @@
           ><span class="second-black-part">Studio</span></a
         >
         <!--Links-->
-        <ul class="nav-list  unformated-list">
+        <ul class="nav-list">
           <li><a href="./index.html" class="nav-item nav-active">Студия</a></li>
           <li><a href="./portfolio.html" class="nav-item">Портфолио</a></li>
           <li><a href="" class="nav-item">Контакты</a></li>
         </ul>
       </nav>
       <!--Contacts-->
-      <ul class="contacts unformated-list flex-conteiner" style="list-style-type: none">
+      <ul class="contacts flex-conteiner" style="list-style-type: none">
         <li>
           <a href="mailto:info@devstudio.com" class="contact"
             >info@devstudio.com</a
@@ -45,7 +45,7 @@
     <!--Main container-->
     <main>
       <!--Section Hero-->
-      <section class="hero section">
+      <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
           <button class="hero-button" type="button">Заказать услугу</button>
@@ -55,7 +55,7 @@
       <section class="peculiarities">
         <div class="conteiner">
           <h2 class="hiden-title">Главные принципы</h2>
-          <ul class="principle-list unformated-list flex-conteiner">
+          <ul class="principle-list flex-conteiner">
             <li class="principle-card">
               <h3 class="principle-title">Внимание к деталям</h3>
               <p class="principle-description">
@@ -90,7 +90,7 @@
       <section class="activity section">
         <div class="conteiner">
           <h2 class="section-heading">Чем мы занимаемся</h2>
-          <ul class="jobs-list unformated-list flex-conteiner" style="list-style-type: none">
+          <ul class="jobs-list flex-conteiner" style="list-style-type: none">
             <li>
               <img
                 class="jobs-photo"
@@ -121,7 +121,7 @@
       <!--Section 4 Our team-->
       <section class="team section">
        <div class="conteiner"> <h2 class="section-heading">Наша команда</h2>
-        <ul class="team-list unformated-list flex-conteiner">
+        <ul class="team-list flex-conteiner">
           <li class="team-member">
             <img
               class="photo"
@@ -129,8 +129,9 @@
               alt="Igor's photo"
               width="270"
             />
-            <h3 class="name">Игорь Демьяненко</h3>
-            <p lang="en" class="position">Product Designer</p>
+            <div class="description"><h3 class="name">Игорь Демьяненко</h3>
+            <p lang="en" class="position">Product Designer</p></div>
+            
           </li>
           <li class="team-member">
             <img
@@ -139,8 +140,9 @@
               alt="Olga's photo"
               width="270"
             />
-            <h3 class="name">Ольга Репина</h3>
-            <p lang="en" class="position">Frontend Developer</p>
+            <div class="description"><h3 class="name">Ольга Репина</h3>
+            <p lang="en" class="position">Frontend Developer</p></div>
+            
           </li>
           <li class="team-member">
             <img
@@ -149,8 +151,9 @@
               alt="Nikolay's photo"
               width="270"
             />
-            <h3 class="name">Николай Тарасов</h3>
-            <p lang="en" class="position">Marketing</p>
+            <div class="description"><h3 class="name">Николай Тарасов</h3>
+            <p lang="en" class="position">Marketing</p></div>
+            
           </li>
           <li class="team-member">
             <img
@@ -159,8 +162,9 @@
               alt="Mychail's photo"
               width="270"
             />
-            <h3 class="name">Михаил Ермаков</h3>
-            <p lang="en" class="position">UI Designer</p>
+            <div class="description"><h3 class="name">Михаил Ермаков</h3>
+            <p lang="en" class="position">UI Designer</p></div>
+            
           </li>
         </ul></div>
       </section>
@@ -174,7 +178,7 @@
           ><span class="second-white-part">Studio</span></a
         >
         <!--Contacts-->
-        <address><ul class="bottom-contacts unformated-list" style="list-style-type: none">
+        <address><ul class="bottom-contacts">
           <li>
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
           </li>
